@@ -1,25 +1,8 @@
 # KITTI_spoofing
 
-## Setup / 환경 설정: python 3.7버전 사용
+> 📄 Available in: [🇺🇸 English](./README_EN.md) | [🇰🇷 한국어](./README_KO.md)
 
-### Data Requirements / 데이터 요구 사항:
-```bash
-/velodyne/       # .bin files (LiDAR point cloud data)
-/label_2/        # Bounding box label files
-/calib/          # Calibration files
-/image_2/        # RGB images (for visualization)
-```
 
-### root file
-```bash
-Z:/media/ssd3/lab/sypark/KITTI/object/2d_object/data_object/
-  ├── training/
-  │     ├── image_2/                      # 원본 이미지 데이터
-  │     ├── velodyne/                     # 원본 LiDAR 데이터
-  │     ├── calib/                        # Calibration 파일
-```
-
-## File and Folder Descriptions / 파일 및 폴더 설명
 ### 1. bilateral_filter_org_png.ipynb
 이 파일은 LiDAR 또는 RGB 데이터에 이중 필터(Bilateral Filter)를 적용한 결과를 확인할 수 있는 참조 이미지입니다.
 포인트 클라우드 데이터의 노이즈를 줄이거나 RGB 채널에서 부드러운 결과를 얻는 데 사용됩니다.
